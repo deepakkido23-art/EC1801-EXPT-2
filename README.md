@@ -21,22 +21,22 @@ File name	Purpose
 logic_gates.v	Logic-gate RTL
 logic_gates_tb.v	All input combinations and VCD generation
  # Verilog  Program
- module basic_gates (
+```
+module basic_gates (
     input  wire a,
     input  wire b,
     output wire y_and,
     output wire y_or,
     output wire y_not
 );
-	
+
     assign y_and = a & b;   // AND gate
     assign y_or  = a | b;   // OR gate
     assign y_not = ~a;      // NOT gate (inverter)
 
 endmodule
-
+```
 # **Test Bench Program**
-
 module tb2;
 
     reg a, b;
@@ -69,6 +69,7 @@ module tb2;
     end
 
 endmodule
+
 
 
  
@@ -122,7 +123,8 @@ Y_NOT = A'
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected truth table.
 Output
 # OUTPUT
-<img width="1920" height="1080" alt="exp 2 dlc" src="https://github.com/user-attachments/assets/e3d65567-0fa0-4cf4-bf3f-615b29d002a0" />
+
+<img width="1920" height="1080" alt="exp 2 dlc" src="https://github.com/user-attachments/assets/648e7d93-c6da-43c9-982d-b7e45514e8f3" />
 
 
  
